@@ -8,10 +8,16 @@ const LoginForm = () => {
     const navigate = useNavigate();
     const onSubmit = async (data) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', data);
+            const res = await axios.post('https://safe-zonneeeee-backend.vercel.app/api/auth/login', data,{
+                withCredentials: true
+            });
             localStorage.setItem('token', res.data.token);
             localStorage.setItem("name", res.data.name);
-            if (res.statusText === "OK") {
+            console.log(res.data);
+            console.log(res);
+
+
+            if (res.status === 200) {
                 navigate("/")
             }
         } catch (err) {
