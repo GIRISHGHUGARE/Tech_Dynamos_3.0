@@ -4,13 +4,12 @@ import L from 'leaflet'; // Leaflet for maps
 import axios from 'axios';
 import 'leaflet/dist/leaflet.css';
 
-const API_KEY = 'f5128cadeb4b4d8bb9f191705241008'; // Your WeatherAPI key
+const API_KEY = 'f5128cadeb4b4d8bb9f191705241008'; 
 
 export default function WeatherMap() {
   const [weatherData, setWeatherData] = useState([]);
 
   useEffect(() => {
-    // Locations in India (You can expand this list)
     const locations = [
       { name: 'Mumbai', lat: 19.076, lon: 72.8777 },
       { name: 'Delhi', lat: 28.7041, lon: 77.1025 },
