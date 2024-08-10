@@ -13,16 +13,16 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item fw-bold">
-                <Link className="nav-link active" style={{ fontSize: "23px" }} aria-current="page" to="">Home</Link>
+                <Link className="nav-link active" style={{fontSize: "20px",marginRight:"20px"}} aria-current="page" to="">Home</Link>
               </li>
               <li className="nav-item fw-bold">
-                <Link className="nav-link" aria-current="page" style={{ fontSize: "23px" }} to="/Emergency">Emergency</Link>
+                <Link className="nav-link" aria-current="page" style={{fontSize: "20px",marginRight:"20px"}} to="/Emergency">Emergency</Link>
               </li>
               <li className="nav-item fw-bold">
-                <Link className="nav-link" aria-current="page" style={{ fontSize: "23px" }} to="/LearnProtect">Learn&Protect</Link>
+                <Link className="nav-link" aria-current="page" style={{fontSize:"20px",marginRight:"20px"}} to="/LearnProtect">Learn&Protect</Link>
               </li>
               <li className="nav-item fw-bold">
-                <Link className="nav-link" aria-current="page" style={{ fontSize: "23px" }} to="/Community">Community</Link>
+                <Link className="nav-link" aria-current="page" style={{fontSize:"20px",marginRight:"20px"}} to="/Community">Community</Link>
               </li>
               {/* <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/Login">Login</Link>

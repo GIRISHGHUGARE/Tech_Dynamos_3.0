@@ -15,7 +15,7 @@ export default function Home() {
         </div> */}
             <div className="home-container mt-3 vh-100" >
                 <div className="row flex-grow-1" >
-                    <div className="fw-bold text-center fs-1 text-gradient" style={{ marginTop: "130px",fontSize: "45px"  }} to="/Home">SafeZone</div>
+                    <div className="fw-bold text-center fs-1 text-logo-gradient" style={{ marginTop: "130px",fontSize: "45px"  }} to="/Home">SafeZone</div>
                 </div>
                 <div className="row mt-3 flex-grow-1">
                     <div className="fw-bold text-center" style={{ fontSize: "70px" }} to="/Home">Real Alerts and Response</div>
@@ -38,8 +38,23 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className='container mt-5'>
-
+            <div className='home-container mt-5'>
+                <div className='container text-center'>
+                    <div className='row'>
+                        <div className='col'>
+                            <input typeof='text'></input>
+                        </div>
+                        <div className='col'>
+                            <input typeof='text'></input>
+                        </div>
+                    </div>
+                    <div className='row'>
+                        <input typeof='text'></input>
+                    </div>
+                    <div className='row'>
+                        <input typeof='text'></input>
+                    </div>
+                </div>
             </div>
         </>
     )
