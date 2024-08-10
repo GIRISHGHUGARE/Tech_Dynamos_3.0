@@ -39,45 +39,58 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="fw-bold text-center fs-1 text-logo-gradient" style={{ marginTop: "10px", fontSize: "45px" }} to="/Home"><h2>Emergency Contact Details :</h2></div>
-            <div className="container">
-                <div className="row mb-3">
-                    <div className="col-12 col-md-6 text-center mb-2">
-                        <a href="tel:108">
-                            <button id="disaster-btn" className="btn btn-lg w-100 py-3">
-                                Disaster Management Services - 108
-                            </button>
-                        </a>
-                    </div>
-                    <div className="col-12 col-md-6 text-center mb-2">
-                        <a href="tel:9540161344">
-                            <button id="air-ambulance-btn" className="btn btn-lg w-100 py-3">
-                                Air Ambulance - 9540161344
-                            </button>
-                        </a>
+
+            <div className='row mt-3'>
+                <div className='col'>
+                    <div className="home-container">
+                        <div className="fw-bold pt-5 text-center fs-1 text-logo-gradient" style={{ marginTop: "10px", fontSize: "45px" }}><h2>Emergency Sources</h2></div>
+                        <div className="row">
+                            <div className="col-12 col-md-6 text-center mb-2">
+                                <a href="tel:108">
+                                    <button id="disaster-btn" className="btn btn-lg w-100 py-3">
+                                        Disaster Management Services - 108
+                                    </button>
+                                </a>
+                            </div>
+                            <div className="col-12 col-md-6 text-center mb-2">
+                                <a href="tel:9540161344">
+                                    <button id="air-ambulance-btn" className="btn btn-lg w-100 py-3">
+                                        Air Ambulance - 9540161344
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="row mb-3 d-block justify-content-center">
+                            <a href="tel:01126701728">
+                                <button id="ndma-btn" className="btn btn-lg w-100 py-3">
+                                    Disaster Management N.D.M.A - 011-26701728-1078
+                                </button>
+                            </a>
+                        </div>
+                        <div className="row mb-3 d-block justify-content-center">
+                            <a href="tel:01124363260">
+                                <button id="ndrf-btn" className="btn btn-lg w-100 py-3">
+                                    EARTHQUAKE / FLOOD / DISASTER N.D.R.F - 011-24363260
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div className="row mb-3 d-block justify-content-center">
-                    <div className="col-12 col-md-8">
-                        <a href="tel:01126701728">
-                            <button id="ndma-btn" className="btn btn-lg w-100 py-3">
-                                Disaster Management N.D.M.A - 011-26701728-1078
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div className="row mb-3 d-block justify-content-center">
-                    <div className="col-12 col-md-8">
-                        <a href="tel:01124363260">
-                            <button id="ndrf-btn" className="btn btn-lg w-100 py-3">
-                                EARTHQUAKE / FLOOD / DISASTER N.D.R.F - 011-24363260
-                            </button>
-                        </a>
+                <div className='col'>
+                    <div className="home-container" style={{ height: "500px" }}>
+                        <div className="row twitter-container">
+                            <div className="fw-bold pt-4 text-center" style={{ fontSize: "30px" }}>Twitter</div>
+                            <div className="fw-bold pt-2 pb-3 text-center" style={{ fontSize: "15px" }}>INDIAN METROPLITIAN DEPARTMENT</div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+
+
             <div>
-                <LearnProtect/>
+                <LearnProtect />
             </div>
         </>
     )
