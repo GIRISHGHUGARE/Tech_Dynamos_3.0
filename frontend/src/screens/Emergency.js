@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';  // Import Leaflet
 import axios from 'axios';  // Import Axios for HTTP requests
 import 'leaflet/dist/leaflet.css';
+import Demo from "../components/Demo";
 
 // Define a custom icon
 const customIcon = new L.Icon({
@@ -82,6 +83,10 @@ export default function Emergency() {
           <p>Fetching your location...</p>
         )
       }
+      <br />
+      <br />
+      <br />
+      <br />
       {/* <div style={{ margin: '20px', padding: '10px', border: '1px solid #ddd', borderRadius: '5px', backgroundColor: '#f9f9f9' }}>
         <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>Disaster News</h2>
         {loading ? (
@@ -102,6 +107,7 @@ export default function Emergency() {
           </ul>
         )}
       </div> */}
+      <Demo/>
     </>
   );
 }
