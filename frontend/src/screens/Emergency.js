@@ -39,7 +39,6 @@ export default function Emergency() {
   }, []);
 
   // useEffect(() => {
-  //   // Fetch disaster-related news articles from News API
   //   const fetchNews = async () => {
   //     try {
   //       const response = await axios.get('https://newsapi.org/v2/everything', {
@@ -50,7 +49,6 @@ export default function Emergency() {
   //           apiKey: 'a376e8c00e7e4541973bab791d4305c1'  // Your News API key
   //         }
   //       });
-  //       // Limit to the first 5 articles
   //       setArticles(response.data.articles.slice(0, 5));
   //     } catch (error) {
   //       setError(error);
