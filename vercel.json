@@ -2,17 +2,9 @@
     "version": 2,
     "builds": [
       {
-        "src": "./",
+        "src": "./frontend",
         "use": "@vercel/static-build",
-        "config": {
-          "buildCommand": "npm run build"
-        }
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
+        "config": {}
       }
     ]
   }
