@@ -1,8 +1,6 @@
 import React from 'react'
-import "../LearnPro.css"
-import { Link } from 'react-router-dom'
-
-const LearnProtect = () => {
+import "./LearnPro.css"
+const LearnPro = () => {
     return (
         <div className='LearnPro'>
             <div className="headerTitle">
@@ -79,11 +77,11 @@ const LearnProtect = () => {
                     
                 </div>
             </div>
-            <div className="direct mt-5" style={{margin:"auto"}}>
-                <Link to="/LearnProtect">Learn More +</Link>
+            <div className="direct">
+                <a href="http://">Learn More +</a>
             </div>
         </div>
     )
 }
 
-export default LearnProtect
+export default LearnPro

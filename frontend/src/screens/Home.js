@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import SignupForm from './SignUp'
 import LoginForm from './Login'
 import { Link } from 'react-router-dom'
+import LearnProtect from './LearnProtect'
 
 export default function Home() {
     let userName = localStorage.getItem('name')
@@ -74,6 +75,9 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
+            </div>
+            <div>
+                <LearnProtect/>
             </div>
         </>
     )
