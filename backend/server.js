@@ -14,23 +14,22 @@ app.use(bodyPaser.json())
 
 app.use(cors({
     origin: [
-        'https://safe-zonneeeee.vercel.app/',
-        'http://localhost:3000/',
-        'https://safe-zonneeeee-qejrfqt3b-tushars-projects-fe2cc83f.vercel.app/',
-        'https://tech-dynamos-3-0-frontend.vercel.app/'
+        'https://safe-zonneeeee.vercel.app',
+        'http://localhost:3000',
+        'https://safe-zonneeeee-qejrfqt3b-tushars-projects-fe2cc83f.vercel.app',
+        'https://tech-dynamos-3-0-frontend.vercel.app',
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type'],
-    optionSuccessStatus: 200
+    optionsSuccessStatus: 200,
 }));
-
 
 
 
 connectDb()
 
-app.use('/debugging',(req,res)=>{
+app.use('/debugging', (req, res) => {
     res.send('<h1> Hello , world!!</h1>')
 })
 
