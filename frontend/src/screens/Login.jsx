@@ -1,16 +1,17 @@
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 
-const LoginForm = ({ setAuth }) => {
+const LoginForm = () => {
     const { register, handleSubmit } = useForm();
-
+    const navigate = useNavigate();
     const onSubmit = async (data) => {
         try {
             const res = await axios.post('http://localhost:5000/api/auth/login', data);
             localStorage.setItem('token', res.data.token);
-            setAuth(true);
-            console.log(res);
-            
+            if (res.statusText=="OK") {
+                navigate("/Home")
+            }
         } catch (err) {
             console.error(err);
         }

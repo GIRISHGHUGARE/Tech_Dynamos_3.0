@@ -1,11 +1,14 @@
 import Login from './screens/Login';
 import Layout from './components/Layout';
+import Home from './screens/Home';
+import Emergency from './screens/Emergency';
+import LearnProtect from './screens/LearnProtect';
+import Community from './screens/Community';
 import {
   createBrowserRouter,
   RouterProvider,
   Route
 } from "react-router-dom";
-import Home from './screens/Home';
 
 const router = createBrowserRouter([
   {
@@ -17,9 +20,21 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
+        path: "/Emergency",
+        element: <Emergency/>,
+      },
+      {
         path: "/Home",
         element: <Home />,
-      } 
+      },
+      {
+        path: "/LearnProtect",
+        element: <LearnProtect/>,
+      },
+      {
+        path: "/Community",
+        element: <Community/>,
+      }   
     ]
   }
 ]);
