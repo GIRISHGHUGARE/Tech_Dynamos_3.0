@@ -39,26 +39,41 @@ export default function Home() {
                 </div>
             </div>
             <div className="fw-bold text-center fs-1 text-logo-gradient" style={{ marginTop: "10px", fontSize: "45px" }} to="/Home"><h2>Emergency Contact Details :</h2></div>
-            <div className='row mb-3'>
-                <div className='col'>
-                    <input type='text' className='form-control rounded' placeholder='First Name' />
+            <div className="container">
+                <div className="row mb-3">
+                    <div className="col-12 col-md-6 text-center mb-2">
+                        <a href="tel:108">
+                            <button id="disaster-btn" className="btn btn-lg w-100 py-3">
+                                Disaster Management Services - 108
+                            </button>
+                        </a>
+                    </div>
+                    <div className="col-12 col-md-6 text-center mb-2">
+                        <a href="tel:9540161344">
+                            <button id="air-ambulance-btn" className="btn btn-lg w-100 py-3">
+                                Air Ambulance - 9540161344
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div className='col'>
-                    <input type='text' className='form-control rounded' placeholder='Last Name' />
+                <div className="row mb-3 d-block justify-content-center">
+                    <div className="col-12 col-md-8">
+                        <a href="tel:01126701728">
+                            <button id="ndma-btn" className="btn btn-lg w-100 py-3">
+                                Disaster Management N.D.M.A - 011-26701728-1078
+                            </button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className='row mb-3'>
-                <div className='col'>
-                    <input type='text' className='form-control rounded' placeholder='Phone Number' />
+                <div className="row mb-3 d-block justify-content-center">
+                    <div className="col-12 col-md-8">
+                        <a href="tel:01124363260">
+                            <button id="ndrf-btn" className="btn btn-lg w-100 py-3">
+                                EARTHQUAKE / FLOOD / DISASTER N.D.R.F - 011-24363260
+                            </button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div className='row mb-3'>
-                <div className='col'>
-                    <input type='text' className='form-control rounded' placeholder='Email Address' />
-                </div>
-            </div>
-            <div className="btn d-flex justify-content-center">
-            <button className="border-0 w-25 text-center fw-bold shadow getinfobtn" style={{ fontSize: "20px" }} >Submit</button>
             </div>
         </>
     )
