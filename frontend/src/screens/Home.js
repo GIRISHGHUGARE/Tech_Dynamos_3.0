@@ -14,10 +14,6 @@ export default function Home() {
                 <Navbar />
             </div>
             <div>
-                <div>
-                    <SignupForm />
-                    <LoginForm setAuth={setAuth} />
-                </div>
                 <div className="container">
                     <div className="title">
                         <h3>Real Alerts and Response</h3>
