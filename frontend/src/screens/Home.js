@@ -11,13 +11,7 @@ export default function Home() {
     return (
         <>
             <div>
-                <Navbar />
-            </div>
-            <div>
              Body
-            </div>
-            <div>
-                <Footer />
             </div>
         </>
     )
