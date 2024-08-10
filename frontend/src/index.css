@@ -1,0 +1,16 @@
+.text-gradient {
+    background: linear-gradient(90deg, #65FF4B 0%, #666666 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.getinfobtn{
+  background-color: #DAFFCB;
+  text-decoration: none;
+  color: #000;
+  height: 70px;
+  width: 150px;
+  justify-content: center;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}

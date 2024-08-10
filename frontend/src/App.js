@@ -12,7 +12,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Layout />,
     children:[
       {
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <Emergency/>,
       },
       {
-        path: "/Home",
+        path: "",
         element: <Home />,
       },
       {
