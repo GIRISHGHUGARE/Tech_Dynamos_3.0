@@ -2,11 +2,9 @@
     "version": 2,
     "builds": [
       {
-        "src": "frontend/index.js",
+        "src": "./build",
         "use": "@vercel/static-build",
-        "config": {
-          "buildCommand": "npm run build"
-        }
+        "config": {}
       }
     ]
   }
