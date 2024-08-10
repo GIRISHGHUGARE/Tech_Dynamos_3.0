@@ -9,8 +9,9 @@ const LoginForm = () => {
         try {
             const res = await axios.post('http://localhost:5000/api/auth/login', data);
             localStorage.setItem('token', res.data.token);
+            localStorage.setItem("name", res.data.name);
             if (res.statusText=="OK") {
-                navigate("/Home")
+                navigate("/")
             }
         } catch (err) {
             console.error(err);
