@@ -1,8 +1,12 @@
 {
-    "rewrites": [
+    "version": 2,
+    "builds": [
       {
-        "source": "/(.*)",
-        "destination": "/index.html"
+        "src": "frontend/index.js",
+        "use": "@vercel/static-build",
+        "config": {
+          "buildCommand": "npm run build"
+        }
       }
     ]
   }
