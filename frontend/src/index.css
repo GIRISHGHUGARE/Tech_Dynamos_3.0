@@ -49,3 +49,25 @@ body{
   height: 30px;
   width: 40px;
 }
+
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center; 
+  animation: typing 6s linear infinite; 
+  font-size: 1.6rem;
+  width: 100%; 
+  margin: 0 auto; 
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
