@@ -1,31 +1,31 @@
-:root{
+:root {
     --Lheader-font: 46px;
     --Lsectionhead-font: 32px;
-    --Ldesc-font:18px;
-    --Ldesc-fontsmall:12px;
+    --Ldesc-font: 18px;
+    --Ldesc-fontsmall: 12px;
 
-    --Mheader-font:32px;
-    --Mdesc-font:16px;
+    --Mheader-font: 32px;
+    --Mdesc-font: 16px;
 
-    --Sheader-font:30px;
+    --Sheader-font: 30px;
     --Sdesc-font: 14px;
 
 
-    --box-bg:white;
-    --box-bginside:rgb(245, 251, 255);
+    --box-bg: white;
+    --box-bginside: rgb(245, 251, 255);
 
     --bg-gradient: linear-gradient(to bottom, #ffffff, #e4fbff);
     --text-gradient: linear-gradient(to right, #00ff15, #af65ff);
 }
 
-.LearnPro{
+.LearnPro {
     padding: 80px 20px;
     display: grid;
     grid-template-columns: auto;
-    
+
 }
 
-.LearnPro .headerTitle .title{
+.LearnPro .headerTitle .title {
     font-size: 46px;
     font-weight: 600;
     background-image: var(--text-gradient);
@@ -37,7 +37,7 @@
     margin-bottom: 40px;
 }
 
-.LearnPro .tips{
+.LearnPro .tips {
     display: grid;
     background-color: var(--box-bginside);
     padding: 40px 20px;
@@ -45,7 +45,7 @@
     border-radius: 20px;
 }
 
-.LearnPro .tips .title{
+.LearnPro .tips .title {
     font-size: var(--Ldesc-font);
     font-weight: 600;
     margin-bottom: 20px;
@@ -54,15 +54,15 @@
     gap: 15px;
 }
 
-.LearnPro .tips .title .icons{
+.LearnPro .tips .title .icons {
     background-color: #b0fd98;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 1px 6px 5px rgb(191, 190, 190);
-    
+
 }
 
-.LearnPro .tips .tipBoxs{
+.LearnPro .tips .tipBoxs {
     padding: 20px 0;
     display: flex;
     flex-direction: row;
@@ -71,7 +71,7 @@
     gap: 20px;
 }
 
-.LearnPro .tips .tipBoxs .tipBox{
+.LearnPro .tips .tipBoxs .tipBox {
     padding: 20px;
     background-color: var(--box-bg);
     border-radius: 20px;
@@ -80,12 +80,12 @@
     max-width: 500px;
 }
 
-.LearnPro .tips .tipBoxs .tipBox{
+.LearnPro .tips .tipBoxs .tipBox {
     font-size: 14px;
     line-height: 1.7;
 }
 
-.LearnPro .helpVideos{
+.LearnPro .helpVideos {
     display: grid;
     background-color: var(--box-bginside);
     padding: 40px 20px;
@@ -94,7 +94,7 @@
     margin-top: 20px;
 }
 
-.LearnPro .helpVideos .title{
+.LearnPro .helpVideos .title {
     font-size: var(--Ldesc-font);
     font-weight: 600;
     margin-bottom: 20px;
@@ -103,15 +103,15 @@
     gap: 15px;
 }
 
-.LearnPro .helpVideos .title .icons{
+.LearnPro .helpVideos .title .icons {
     background-color: #b0fd98;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 1px 6px 5px rgb(191, 190, 190);
-    
+
 }
 
-.LearnPro .helpVideos .videos{
+.LearnPro .helpVideos .videos {
     padding: 20px 0;
     display: flex;
     flex-direction: row;
@@ -121,7 +121,7 @@
     gap: 50px;
 }
 
-.LearnPro .helpVideos .videos .video iframe{
+.LearnPro .helpVideos .videos .video iframe {
     padding: 10px;
     background-color: var(--box-bg);
     box-shadow: 1px 1px 5px;
@@ -134,76 +134,78 @@
     margin: 0 10px;
 }
 
-.LearnPro .direct{
+.LearnPro .direct {
     color: black;
-    background-color: rgb(1, 228, 32,0.3);
+    background-color: rgb(1, 228, 32, 0.3);
     padding: 15px 25px;
     margin-top: 50px;
     max-width: fit-content;
     border-radius: 50px;
-    
+
 }
 
-.LearnPro .direct a{
+.LearnPro .direct a {
     text-decoration: none;
     color: black;
-    
+
 }
 
 
 @media screen and (max-width:930px) {
-    .LearnPro .headerTitle .title{
+    .LearnPro .headerTitle .title {
         font-size: var(--Mheader-font);
     }
 
-    .LearnPro .tips .title{
+    .LearnPro .tips .title {
         font-size: var(--Mdesc-font);
     }
 
-    .LearnPro .tips .tipBoxs .tipBox{
+    .LearnPro .tips .tipBoxs .tipBox {
         font-size: 14px;
         line-height: 1.7;
     }
 
-    .LearnPro .tips .tipBoxs .tipBox{
+    .LearnPro .tips .tipBoxs .tipBox {
         padding: 20px;
         background-color: var(--box-bg);
         border-radius: 20px;
         width: 100%;
         min-width: 300px;
         max-width: 500px;
-}
-.LearnPro .helpVideos .title{
-    font-size: var(--Mdesc-font);
-}
+    }
+
+    .LearnPro .helpVideos .title {
+        font-size: var(--Mdesc-font);
+    }
 
 }
 
 
 @media screen and (max-width:620px) {
-    .LearnPro .headerTitle .title{
+    .LearnPro .headerTitle .title {
         font-size: var(--Sheader-font);
     }
 
-    .LearnPro .tips .title{
+    .LearnPro .tips .title {
         font-size: var(--Sdesc-font);
     }
 
-    .LearnPro .tips .tipBoxs .tipBox{
+    .LearnPro .tips .tipBoxs .tipBox {
         font-size: 14px;
         line-height: 1.7;
     }
 
-    .LearnPro .tips .tipBoxs .tipBox{
+    .LearnPro .tips .tipBoxs .tipBox {
         padding: 20px;
         background-color: var(--box-bg);
         border-radius: 20px;
         width: 100%;
         min-width: 200px;
         max-width: 500px;
-}
-.LearnPro .helpVideos .title{
-    font-size: var(--Sdesc-font);
-}
+    }
+
+    .LearnPro .helpVideos .title {
+        font-size: var(--Sdesc-font);
+    }
 
 }

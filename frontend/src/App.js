@@ -14,14 +14,14 @@ const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
-    children:[
+    children: [
       {
         path: "/Login",
         element: <Login />,
       },
       {
         path: "/Emergency",
-        element: <Emergency/>,
+        element: <Emergency />,
       },
       {
         path: "",
@@ -29,11 +29,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/LearnProtect",
-        element: <LearnProtect/>,
+        element: <LearnProtect />,
       },
       {
         path: "/Community",
-        element: <Community/>,
+        element: <Community />,
       }
     ]
   }

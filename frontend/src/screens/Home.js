@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import SignupForm from './SignUp'
 import LoginForm from './Login'
 import { Link } from 'react-router-dom'
@@ -39,7 +37,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
             <div className='row mt-3'>
                 <div className='col'>
                     <div className="home-container">
@@ -85,10 +82,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-
-
-
             <div>
                 <LearnProtect />
             </div>
