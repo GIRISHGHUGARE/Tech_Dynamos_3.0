@@ -1,5 +1,6 @@
 import React from 'react';
 // import { BellIcon } from '@heroicons/react/outline';
+import logo from '../assets/Safe_Zone-removebg-preview.png'
 
 const Navbar = () => {
   return (
