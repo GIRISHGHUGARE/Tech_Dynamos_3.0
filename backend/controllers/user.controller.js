@@ -2,14 +2,12 @@ const User = require('../models/userSchema.js');
 
 const addUser = async (req, res) => {
     try {
-        const { name, email, mobile, password, city } = req.body;
+        const { name, email, password } = req.body;
 
         const newUser = new User({
             name,
             email,
-            mobile,
-            password,
-            city
+            password
         });
 
         await newUser.save();
@@ -51,7 +49,7 @@ const login = async (req, res) => {
         const { email, password } = req.body;
 
         const userEmail = await User.findOne({ email });
-        
+
         if (!userEmail) {
             return res.json({
                 "User-email": "Not Found!!"
