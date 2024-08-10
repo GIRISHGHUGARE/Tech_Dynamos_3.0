@@ -5,7 +5,7 @@ import SignupForm from './SignUp'
 import LoginForm from './Login'
 
 export default function Home() {
-    
+
     const [auth, setAuth] = useState(false);
 
     return (
@@ -18,7 +18,7 @@ export default function Home() {
                     <SignupForm />
                     <LoginForm setAuth={setAuth} />
                 </div>
-                {/* <div className="container">
+                <div className="container">
                     <div className="title">
                         <h3>Real Alerts and Response</h3>
                         <p>Know Weather Forecasts and Disaster Alerts</p>
@@ -39,7 +39,7 @@ export default function Home() {
                             </button>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
             <div>
                 <Footer />
