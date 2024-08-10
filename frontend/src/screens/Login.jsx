@@ -8,10 +8,16 @@ const LoginForm = () => {
     const navigate = useNavigate();
     const onSubmit = async (data) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', data);
+            const res = await axios.post('https://safe-zonneeeee-backend.vercel.app/api/auth/login', data,{
+                withCredentials: true
+            });
             localStorage.setItem('token', res.data.token);
             localStorage.setItem("name", res.data.name);
-            if (res.statusText === "OK") {
+            console.log(res.data);
+            console.log(res);
+
+
+            if (res.status === 200) {
                 navigate("/")
             }
         } catch (err) {
@@ -21,33 +27,36 @@ const LoginForm = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            {/* <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register('email')} type="email" placeholder="Email" />
                 <input {...register('password')} type="password" placeholder="Password" />
                 <button type="submit">Login</button>
-            </form>
+            </form> */}
+
             <div className='login'>
                 <div className="loginForm">
-                    <div className="header">
-                        <span className='title'>Login / Signup</span>
-                        <span className="desc">Now you can login get access to
-                            <br /><span>community and chats</span>
-                        </span>
-                    </div>
-                    <div className="form">
-                        <span className='label'>Login</span>
-                        <div className="email">
-                            <label>Enter your Email : </label>
-                            <input type='text'></input>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+                        <div className="header">
+                            <span className='title'>Login / Signup</span>
+                            <span className="desc">Now you can login get access to
+                                <br /><span>community and chats</span>
+                            </span>
                         </div>
-                        <div className="password">
-                            <label>Enter your Password : </label>
-                            <input type='text'></input>
+                        <div className="form">
+                            <span className='label'>Login</span>
+                            <div className="email">
+                                <label>Enter your Email : </label>
+                                <input {...register('email')} type="email" placeholder="Email" />
+                            </div>
+                            <div className="password">
+                                <label>Enter your Password : </label>
+                                <input {...register('password')} type="password" placeholder="Password" />
+                            </div>
+                            <div className="button">
+                                <button type="submit">Login</button>
+                            </div>
                         </div>
-                        <div className="button">
-                            <a href="">Submit</a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div className="formImg">
                     <img src="./login.jpg" />
