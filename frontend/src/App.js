@@ -1,24 +1,32 @@
-import React from 'react';
+import Login from './screens/Login';
+import Layout from './components/Layout';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route
+} from "react-router-dom";
 import Home from './screens/Home';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children:[
+      {
+        path: "/Login",
+        element: <Login />,
+      },
+      {
+        path: "/Home",
+        element: <Home />,
+      } 
+    ]
+  }
+]);
 
 function App() {
   return (
-    <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-      <div>
-        <Home/>
-      </div>
-    </>
+    <RouterProvider router={router} />
   );
 }
 
