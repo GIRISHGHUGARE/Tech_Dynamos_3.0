@@ -8,7 +8,7 @@ const LoginForm = () => {
     const navigate = useNavigate();
     const onSubmit = async (data) => {
         try {
-            const res = await axios.post('https://safe-zonneeeee-backend.vercel.app/api/auth/login', data,{
+            const res = await axios.post('https://tech-dynamos-3-0-backend.vercel.app/api/auth/login', data,{
                 withCredentials: true
             });
             localStorage.setItem('token', res.data.token);
