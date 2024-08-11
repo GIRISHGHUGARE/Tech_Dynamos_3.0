@@ -52,7 +52,7 @@ const LoginForm = () => {
                                 <label>Enter your Password : </label>
                                 <input {...register('password')} type="password" placeholder="Password" />
                             </div>
-                            <div className="button">
+                            <div >
                                 <button type="submit">Login</button>
                             </div>
                         </div>

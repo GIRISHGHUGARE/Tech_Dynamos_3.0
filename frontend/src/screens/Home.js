@@ -3,6 +3,8 @@ import SignupForm from './SignUp'
 import LoginForm from './Login'
 import { Link } from 'react-router-dom'
 import LearnProtect from './LearnProtect'
+import WeatherApp from '../components/Weather'
+import WeatherMap from '../components/Demo'
 
 export default function Home() {
     let userName = localStorage.getItem('name')
@@ -37,6 +39,19 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className='row mt-3 home-container'>
+                <div className='col'>
+                    <div className=''>
+                        <WeatherApp />
+                    </div>
+                </div>
+                <div className='col'>
+                    <div className='mt-5 mb-5'>
+                        <WeatherMap/>
+                    </div>
+                </div>
+            </div>
+
             <div className='row mt-3'>
                 <div className='col'>
                     <div className="home-container">
