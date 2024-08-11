@@ -13,15 +13,16 @@ const app = express()
 app.use(bodyPaser.json())
 
 app.use(cors({
-    origin: [
-        'https://tech-dynamos-3-0-frontend-dz74z5adc-girish-ghugares-projects.vercel.app/'
-    ],
+    origin: "https://safe-zone-deploy-frontend.vercel.app/",
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type'],
     optionsSuccessStatus: 200,
 }));
 
+const communityRouter = require('./routes/communityRouter');
+
+app.use('/api/community', communityRouter);
 
 
 connectDb()
