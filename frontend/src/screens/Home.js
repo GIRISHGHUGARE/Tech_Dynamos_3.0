@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
-import SignupForm from './SignUp'
-import LoginForm from './Login'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import LearnProtect from './LearnProtect'
 
 export default function Home() {
     let userName = localStorage.getItem('name')
-    const [auth, setAuth] = useState(false);
     return (
         <>
-            {/* <div>
+            <div>
             {userName}
-        </div> */}
+        </div>
             <div className="home-container mt-3 vh-100" >
                 <div className="row flex-grow-1" >
                     <div className="fw-bold text-center fs-1 text-logo-gradient typed-out" style={{ marginTop: "130px", fontSize: "45px" }} to="/Home">SafeZone</div>
