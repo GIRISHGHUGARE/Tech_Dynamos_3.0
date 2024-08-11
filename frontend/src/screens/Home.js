@@ -48,7 +48,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
             <div className='row mt-3'>
                 <div className='col'>
                     <div className="home-container">

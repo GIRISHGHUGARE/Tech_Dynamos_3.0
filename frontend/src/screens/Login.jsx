@@ -62,7 +62,6 @@ const LoginForm = () => {
                                 />
                                 {errors.password && <div className="error-message">{errors.password.message}</div>}
                             </div>
-                            <div >
                             {backendError && <div className="error-message">{backendError}</div>}
                             <div className="button">
                                 <button type="submit">Login</button>
