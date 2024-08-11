@@ -9,8 +9,8 @@ export default function Home() {
     return (
         <>
             <div>
-            {userName}
-        </div>
+                {userName}
+            </div>
             <div className="home-container mt-3 vh-100" >
                 <div className="row flex-grow-1" >
                     <div className="fw-bold text-center fs-1 text-logo-gradient typed-out" style={{ marginTop: "130px", fontSize: "45px" }} to="/Home">SafeZone</div>
@@ -38,13 +38,13 @@ export default function Home() {
             </div>
             <div className='row mt-3 home-container'>
                 <div className='col'>
-                    <div className='' style={{marginLeft:"90px"}}>
+                    <div className='' style={{ marginLeft: "90px" }}>
                         <WeatherApp />
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='' style={{marginTop:"90px",marginRight:"80px"}}>
-                        <WeatherMap/>
+                    <div className='' style={{ marginTop: "90px", marginRight: "80px" }}>
+                        <WeatherMap />
                     </div>
                 </div>
             </div>
@@ -88,10 +88,19 @@ export default function Home() {
                     <div className="home-container" style={{ height: "500px" }}>
                         <div className="row twitter-container">
                             <div className="fw-bold pt-4 text-center" style={{ fontSize: "30px" }}>Twitter</div>
-                            <div className="fw-bold pt-2 pb-3 text-center" style={{ fontSize: "15px" }}>INDIAN METROPLITIAN DEPARTMENT</div>
+                            <div className="fw-bold pt-2 pb-3 text-center" style={{ fontSize: "15px" }}>INDIAN METROPOLITAN DEPARTMENT</div>
+                            <div style={{ flex: 1 }}>
+                                <iframe
+                                    src=" https://x.com/Indiametdept"
+                                    style={{ width: "100%", height: "100%", border: "none" }}
+                                    title="Twitter Embed"
+                                    allow="encrypted-media"
+                                ></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <div>
                 <LearnProtect />
