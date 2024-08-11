@@ -18,6 +18,7 @@ app.use(cors({
         'http://localhost:3000',
         'https://safe-zonneeeee-qejrfqt3b-tushars-projects-fe2cc83f.vercel.app',
         'https://tech-dynamos-3-0-frontend.vercel.app',
+        'https://tech-dynamos-3-0-frontend-dz74z5adc-girish-ghugares-projects.vercel.app/'
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
