@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../Weather.css";
+import WeatherMap from "./Demo";
 
 function WeatherApp() {
     const [searchInput, setSearchInput] = useState("");
@@ -97,9 +98,9 @@ function WeatherApp() {
                     </div>
                 </div>
             </div>
-            <div className="map">
-                <img src="" alt="" srcset="" />
-            </div>
+            {/* <div className="map">
+                <WeatherMap/>
+            </div> */}
         </div>
     );
 }

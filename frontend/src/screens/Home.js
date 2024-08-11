@@ -38,12 +38,12 @@ export default function Home() {
             </div>
             <div className='row mt-3 home-container'>
                 <div className='col'>
-                    <div className=''>
+                    <div className='' style={{marginLeft:"90px"}}>
                         <WeatherApp />
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='mt-5 mb-5'>
+                    <div className='' style={{marginTop:"90px",marginRight:"80px"}}>
                         <WeatherMap/>
                     </div>
                 </div>
