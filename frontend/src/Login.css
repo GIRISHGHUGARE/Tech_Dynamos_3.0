@@ -29,7 +29,7 @@
 .login .loginForm {
     display: grid;
     grid-template-columns: auto;
-    gap: 60px;
+    
 }
 
 .login .loginForm .header {
@@ -64,6 +64,7 @@
     border-radius: 20px;
     display: grid;
     gap: 30px;
+    margin-top: 40px;
 }
 
 .login .loginForm .form .label {
@@ -101,7 +102,7 @@
     border: solid rgb(199, 199, 199);
 }
 
-.login .loginForm .form .button {
+.login .loginForm .form div button {
     background-color: lightgreen;
     padding: 10px 30px;
     max-width: fit-content;
@@ -109,18 +110,18 @@
     transition-duration: 0.3s;
 }
 
-.login .loginForm .form .button:hover {
+.login .loginForm .form div button:hover {
     transition: 0.3s;
     transform: translateX(10px);
     box-shadow: 1px 1px 10px rgb(190, 190, 190);
 }
 
 
-.login .loginForm .form .button a {
-    text-decoration: none;
+.login .loginForm .form  div button {
     color: rgb(56, 56, 56);
     font-weight: 600;
-    cursor: pointer;
+    font-size: var(--Sdesc-font);
+    padding: 20px 40px;
 }
 
 
@@ -177,16 +178,9 @@
         border: solid rgb(199, 199, 199);
     }
 
-    .login .loginForm .form .button {
-        font-size: var(--Sdesc-font);
-    }
 
+    
 
-    .login .loginForm .form .button a {
-        text-decoration: none;
-        color: rgb(56, 56, 56);
-        font-weight: 600;
-    }
 }
 
 @media screen and (max-width:620px) {

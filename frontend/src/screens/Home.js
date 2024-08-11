@@ -1,17 +1,16 @@
-import React, { useState } from 'react'
-import SignupForm from './SignUp'
-import LoginForm from './Login'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import LearnProtect from './LearnProtect'
+import WeatherApp from '../components/Weather'
+import WeatherMap from '../components/Demo'
 
 export default function Home() {
     let userName = localStorage.getItem('name')
-    const [auth, setAuth] = useState(false);
     return (
         <>
-            {/* <div>
+            <div>
             {userName}
-        </div> */}
+        </div>
             <div className="home-container mt-3 vh-100" >
                 <div className="row flex-grow-1" >
                     <div className="fw-bold text-center fs-1 text-logo-gradient typed-out" style={{ marginTop: "130px", fontSize: "45px" }} to="/Home">SafeZone</div>
@@ -34,6 +33,18 @@ export default function Home() {
                     </div>
                     <div className="col-4">
                         <div className="fs-5" to="/Home">Community</div>
+                    </div>
+                </div>
+            </div>
+            <div className='row mt-3 home-container'>
+                <div className='col'>
+                    <div className=''>
+                        <WeatherApp />
+                    </div>
+                </div>
+                <div className='col'>
+                    <div className='mt-5 mb-5'>
+                        <WeatherMap/>
                     </div>
                 </div>
             </div>
